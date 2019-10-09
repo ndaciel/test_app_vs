@@ -24,6 +24,12 @@ namespace TransportService
         public Stream GetJson(Core.Model.mdlParam json)
         {
             String nanda = "nanda";
+            if (nanda == "")
+            { nanda = ""; }
+            else
+            {
+                nanda = "22";
+            }
             string chris = "chris2";
             var result = new Core.Model.mdlResultSvc();
             result.Title = "Get Json Download";
@@ -33,6 +39,7 @@ namespace TransportService
             {
                 //do nothing
             }
+            nanda = "22324324234";
 
             if (resultJson.mdlJson.FirstOrDefault().CallPlanList.Count > 0)
             {
