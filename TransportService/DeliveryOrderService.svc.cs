@@ -23,6 +23,7 @@ namespace TransportService
     {
         public Stream GetJson(Core.Model.mdlParam json)
         {
+            String nanda = "nanda";
             string chris = "chris2";
             var result = new Core.Model.mdlResultSvc();
             result.Title = "Get Json Download";
