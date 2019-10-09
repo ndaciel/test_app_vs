@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9605CAEF-5BC4-4BBA-A77D-D7BDD55EB856}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InventLicense">
+      <HintPath>..\..\Library\InventLicense.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\Andy Yo\Documents\Visual Studio 2010\Projects\TCPClientService\Core\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RESTFulWCFService">
+      <HintPath>C:\Users\Andy Yo\Downloads\RESTFulWCFService\RESTFulWCFService\bin\RESTFulWCFService.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\..\FABER\Faber_Transport_v.1.3\Core\bin\Debug\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\..\FABER\Faber_Transport_v.1.3\Core\bin\Debug\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <HintPath>..\..\..\FABER\Faber_Transport_v.1.3\Core\bin\Debug\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Manager.cs" />
+    <Compile Include="Common\ApplicationData.cs" />
+    <Compile Include="Common\DataContextFactory.cs" />
+    <Compile Include="Common\HelperFacade.cs" />
+    <Compile Include="Manager\AndroidKeyFacade.cs" />
+    <Compile Include="Manager\AnswerFacade.cs" />
+    <Compile Include="Manager\BBMFacade.cs" />
+    <Compile Include="Manager\BranchFacade.cs" />
+    <Compile Include="Manager\CallPlanFacade.cs" />
+    <Compile Include="Manager\CheckinRadiusFacade.cs" />
+    <Compile Include="Manager\CompanyFacade.cs" />
+    <Compile Include="Manager\CompetitorActivityImageFacade.cs" />
+    <Compile Include="Manager\CompetitorActivityTypeFacade.cs" />
+    <Compile Include="Manager\CompetitorActivityVisitFacade.cs" />
+    <Compile Include="Manager\CompetitorFacade.cs" />
+    <Compile Include="Manager\CryptorEngine.cs" />
+    <Compile Include="Manager\CustomerFacade.cs" />
+    <Compile Include="Manager\CustomerImageFacade.cs" />
+    <Compile Include="Manager\CustomerImageTypeFacade.cs" />
+    <Compile Include="Manager\CustomerTypeFacade.cs" />
+    <Compile Include="Manager\CostFacade.cs" />
+    <Compile Include="Manager\DailyMessageFacade.cs" />
+    <Compile Include="Manager\DataFacade.cs" />
+    <Compile Include="Manager\DeliveryOrderFacade.cs" />
+    <Compile Include="Manager\DepositFacade.cs" />
+    <Compile Include="Manager\DepositTypeFacade.cs" />
+    <Compile Include="Manager\EmailFacade.cs" />
+    <Compile Include="Manager\EmployeeFacade.cs" />
+    <Compile Include="Manager\EmployeeTypeFacade.cs" />
+    <Compile Include="Manager\GeneralSettingsFacade.cs" />
+    <Compile Include="Manager\GenerateIDFacade.cs" />
+    <Compile Include="Manager\HttpMultipartParser.cs" />
+    <Compile Include="Manager\IdleCounterFacade.cs" />
+    <Compile Include="Manager\JsonFacade.cs" />
+    <Compile Include="Manager\LogFacade.cs" />
+    <Compile Include="Manager\LogIdleFacade.cs" />
+    <Compile Include="Manager\LogNotificationFacade.cs" />
+    <Compile Include="Manager\LogVisitFacade.cs" />
+    <Compile Include="Manager\MenuFacade.cs" />
+    <Compile Include="Manager\Misc.cs" />
+    <Compile Include="Manager\MobileConfigFacade.cs" />
+    <Compile Include="Manager\MultipleMultipartParser.cs" />
+    <Compile Include="Manager\PhotoTypeFacade.cs" />
+    <Compile Include="Manager\POSMFacade.cs" />
+    <Compile Include="Manager\POSMStockFacade.cs" />
+    <Compile Include="Manager\POSMVisitFacade.cs" />
+    <Compile Include="Manager\ProductFacade.cs" />
+    <Compile Include="Manager\ProductUOMFacade.cs" />
+    <Compile Include="Manager\PromoCompetitorFacade.cs" />
+    <Compile Include="Manager\PromoFacade.cs" />
+    <Compile Include="Manager\PromoVisitFacade.cs" />
+    <Compile Include="Manager\QuestionFacade.cs" />
+    <Compile Include="Manager\RadiusFacade.cs" />
+    <Compile Include="Manager\ReasonFacade.cs" />
+    <Compile Include="Manager\ReportIdleTrackingFacade.cs" />
+    <Compile Include="Manager\ReportJourneyTrackingFacade.cs" />
+    <Compile Include="Manager\ResultSurveyFacade.cs" />
+    <Compile Include="Manager\ReturFacade.cs" />
+    <Compile Include="Manager\ReverseGeocoding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\SisaStockTypeFacade.cs" />
+    <Compile Include="Manager\SisaStockVisitFacade.cs" />
+    <Compile Include="Manager\SqLiteFacade.cs" />
+    <Compile Include="Manager\StringFacade.cs" />
+    <Compile Include="Manager\TrackingFacade.cs" />
+    <Compile Include="Manager\UploadFacade.cs" />
+    <Compile Include="Manager\UserAccessFacade.cs" />
+    <Compile Include="Manager\UserConfigFacade.cs" />
+    <Compile Include="Manager\UserFacade.cs" />
+    <Compile Include="Manager\VehicleFacade.cs" />
+    <Compile Include="Manager\VehicleTypeFacade.cs" />
+    <Compile Include="Manager\VisitFacade.cs" />
+    <Compile Include="Manager\WarehouseFacade.cs" />
+    <Compile Include="Manager\WebServiceFacade.cs" />
+    <Compile Include="Model\LINQ.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LINQ.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\mdlAnswer.cs" />
+    <Compile Include="Model\mdlAnswer_Type.cs" />
+    <Compile Include="Model\mdlBBMRatio.cs" />
+    <Compile Include="Model\mdlBranch.cs" />
+    <Compile Include="Model\mdlCallPlan.cs" />
+    <Compile Include="Model\mdlCheckinCourierRadius.cs" />
+    <Compile Include="Model\mdlCompany.cs" />
+    <Compile Include="Model\mdlCompetitorActivityImage.cs" />
+    <Compile Include="Model\mdlCompetitorActivityVisit.cs" />
+    <Compile Include="Model\mdlCustomerImageType.cs" />
+    <Compile Include="Model\mdlDeposit.cs" />
+    <Compile Include="Model\mdlDepositType.cs" />
+    <Compile Include="Model\mdlPhotoType.cs" />
+    <Compile Include="Model\mdlPOSMVisit.cs" />
+    <Compile Include="Model\mdlPromoCompetitor.cs" />
+    <Compile Include="Model\mdlCompetitorActivityType.cs" />
+    <Compile Include="Model\mdlCost.cs" />
+    <Compile Include="Model\mdlCostVisit.cs" />
+    <Compile Include="Model\mdlCustomer.cs" />
+    <Compile Include="Model\mdlCustomerImage.cs" />
+    <Compile Include="Model\mdlCustomerType.cs" />
+    <Compile Include="Model\mdlDailyMsg.cs" />
+    <Compile Include="Model\mdlDBVisitDetail.cs" />
+    <Compile Include="Model\mdlDeliveryOrder.cs" />
+    <Compile Include="Model\mdlDBDeliveryOrderDetail.cs" />
+    <Compile Include="Model\mdlEmployee.cs" />
+    <Compile Include="Model\mdlEmployeeType.cs" />
+    <Compile Include="Model\mdlGetWarehouseCoordinate.cs" />
+    <Compile Include="Model\mdlIdleCounter.cs" />
+    <Compile Include="Model\mdlJson.cs" />
+    <Compile Include="Model\mdlCompetitor.cs" />
+    <Compile Include="Model\mdlLog.cs" />
+    <Compile Include="Model\mdlLogIdle.cs" />
+    <Compile Include="Model\mdlLoginParam.cs" />
+    <Compile Include="Model\mdlLogVisitParam.cs" />
+    <Compile Include="Model\mdlMobileConfig.cs" />
+    <Compile Include="Model\mdlParam.cs" />
+    <Compile Include="Model\mdlPOSM.cs" />
+    <Compile Include="Model\mdlPOSMStock.cs" />
+    <Compile Include="Model\mdlProduct.cs" />
+    <Compile Include="Model\mdlPromo.cs" />
+    <Compile Include="Model\mdlPromoVisit.cs" />
+    <Compile Include="Model\mdlPush.cs" />
+    <Compile Include="Model\mdlPushNotificationConfirmationParam.cs" />
+    <Compile Include="Model\mdlQuestion.cs" />
+    <Compile Include="Model\mdlQuestion_Category.cs" />
+    <Compile Include="Model\mdlQuestion_Set.cs" />
+    <Compile Include="Model\mdlReason.cs" />
+    <Compile Include="Model\mdlResult.cs" />
+    <Compile Include="Model\mdlResultSurvey.cs" />
+    <Compile Include="Model\mdlResultSurveyDetail.cs" />
+    <Compile Include="Model\mdlReturOrder.cs" />
+    <Compile Include="Model\mdlSaveAndroidKeyParam.cs" />
+    <Compile Include="Model\mdlSetDeviceIDParam.cs" />
+    <Compile Include="Model\mdlSettings.cs" />
+    <Compile Include="Model\mdlSisaStockType.cs" />
+    <Compile Include="Model\mdlSisaStockVisit.cs" />
+    <Compile Include="Model\mdlSQLParam.cs" />
+    <Compile Include="Model\mdlTracking.cs" />
+    <Compile Include="Model\mdlTrackingIdle.cs" />
+    <Compile Include="Model\mdlTrackingJourney.cs" />
+    <Compile Include="Model\mdlUploadJsonParam.cs" />
+    <Compile Include="Model\mdlUser.cs" />
+    <Compile Include="Model\mdlMenu.cs" />
+    <Compile Include="Model\mdlUserConfig.cs" />
+    <Compile Include="Model\mdlVehicle.cs" />
+    <Compile Include="Model\mdlVehicleType.cs" />
+    <Compile Include="Model\mdlVisit.cs" />
+    <Compile Include="Model\mdlWarehouse.cs" />
+    <Compile Include="Manager\PushNotificationFacade.cs" />
+    <Compile Include="Model\mdlWebService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service\RestPublisher.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Model\LINQ.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LINQ.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\LINQ.dbml.layout">
+      <DependentUpon>LINQ.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

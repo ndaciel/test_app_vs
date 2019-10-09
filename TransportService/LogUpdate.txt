@@ -1,0 +1,109 @@
+﻿--------------------------------------------------------------------------------------------------------
+No | No Doc  | Filename  | User 
+--------------------------------------------------------------------------------------------------------
+
+51. AddCallPlanDetail.aspx
+50. CallPlan.aspx
+49. mdlCallPlan.cs
+48. CallPlanDetail.aspx.cs
+47. CallPlanDetail.aspx
+46. CallPlanFacade.cs
+45. site.Master
+
+-------------------------------------
+
+13-20 Oktober 2016
+
+1. 000 | SettingKoordinat.aspx | fernandes - Benarin template
+   000 | SettingKoordinatPop.aspx | fernandes - nambah inputan radius, ratain inputan , validasi inputan
+   001 | SettingKoordinatPop.aspx.cs | fernandes
+
+2. 000 | SiteMaster | fernandes - ganti menu setting koordinat jadi setting koordinat customer , tambah menu setting koordinat warehouse
+
+3. 000 | css -> kopi folder bowercomponents dan css | fernandes
+
+4. 000 | SettingKoordinatWarehouse.aspx dan cs | fernandes - new
+
+5. 000 | SettingKoordinatWarehousePop.aspx dan cs | fernandes - new
+
+6. 000 | ReportKunjungan.aspx | fernandes - balikin letak script tanggal dan header
+
+7. 000 | WarehouseFacade.cs | fernandes - new
+
+8. 000 | sql server | fernandes - penambahan PK WarehouseID di tabel Warehouse, penambahan field warehouseID di callplandetail , 
+								  penambahan field warehouseId di tabel DO, hilangin PK CallPlanID di callplandetail, penambahan field WarehouseID di DailyCost(PK),
+								  penambahan field WarehouseID di CustomerImage,penambahan field WarehouseID di ReturOrder, penambahan diagram pada db
+
+9. 001 | VisitFacade | fernandes
+
+10. 001 | mdlVisit.cs | fernandes
+
+11. 001 | CustomerFacade.cs | fernandes
+
+12. 000 | ReportKunjungan.rdlc | fernandes - hilangin field longlat dan visitdate ; nambahin field isInRange, warehouseid dan name , dan expression
+
+13. 000 | LINQ | fernandes
+
+14. 000 | Tracking, journeytracking, livetracking, settingkoordinatpop, settingkoordinatwarehousepop .aspx | fernandes - ganti api key untuk semua halaman web yang pake google servis
+
+15. 001 | CustomerImageFacade.cs | fernandes
+
+16. 000 | CallPlanDetail.aspx | fernandes
+
+17. 001 | CallPlanDetail.aspx.cs | fernandes
+
+18. 001 | DeliveryOrderFacade.cs | fernandes
+
+19. 000 | AddCallPlanDetail.aspx | fernandes
+
+20. 001 | AddCallPlanDetail.aspx.cs | fernandes
+
+21. 001 | CallPlanFacade.cs | fernandes
+
+22. 001 | UpdateCallPlanDetail.aspx.cs | fernandes
+
+23. 001 | CostFacade.cs | fernandes
+
+24. 000 | ReportCost.rdlc | fernandes
+
+25. 001 | mdlCost.cs | fernandes
+
+26. 001 | mdlDeliveryOrder.cs | fernandes
+
+27. 000 | ReportDO.rdlc | fernandes
+
+28. 001 | mdlCustomerImage.cs | fernandes
+
+29. 000 | ReportPhoto.rdlc | fernandes
+
+30. 001 | ReturFacade.cs | fernandes
+
+31. 001 | mdlReturOrder.cs | fernandes
+
+32. 000 | ReportRetur.rdlc | fernandes
+
+33. 001 | Branchs.aspx.cs | nanda  full perubahan
+
+34. 000 | Branchs.aspx | nanda full perubahan
+
+35. 001 | CompanyFacade | nanda
+
+36. 001 | MobileConfigFacade | nanda
+
+37. 001 | BranchFacade | nanda
+
+38. 001 | MobileConfig.aspx.cs | nanda
+
+39. 001 | Mobileconfig.aspx | nanda
+
+40. 001 | EmployeeFacade.cs | fernandes
+
+41. 001 | ReportKunjungan.aspx.cs | fernandes
+
+42. 001 | ReportDO.aspx.cs | fernandes
+
+43. 001 | ReportRetur.aspx.cs | fernandes
+
+44. 001 | ReportCost.aspx.cs | fernandes
+
+45. 001 | ReportPhoto.aspx.cs | fernandes
