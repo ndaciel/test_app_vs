@@ -35,12 +35,20 @@ namespace TransportService
             result.Title = "Get Json Download";
             var resultJson = new Core.Model.mdlJsonList();
             resultJson = JsonFacade.LoadJson(json);
+            if (chris == "")
+            {
+                //do nothing
+            }
             nanda = "2234342342nanda24324234";
 
             if (resultJson.mdlJson.FirstOrDefault().CallPlanList.Count > 0)
             {
                 result.StatusCode = "01";
                 result.StatusMessage = "Success";
+            }
+            else if (nanda == "")
+            {
+                //do nothing
             }
             else
             {
