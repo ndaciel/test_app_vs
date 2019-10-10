@@ -24,8 +24,10 @@ namespace TransportService
         public Stream GetJson(Core.Model.mdlParam json)
 
 
-        String wawan = "wawan";
+        String wawan = "wawan-edit";
         String nanda = "nanda";
+        {
+            String nanda = "nanda123";
             if (nanda == "")
             { nanda = ""; }
             else
