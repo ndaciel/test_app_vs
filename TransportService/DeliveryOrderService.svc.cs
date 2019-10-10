@@ -22,8 +22,10 @@ namespace TransportService
     public class DeliveryOrderService : IDeliveryOrderService
     {
         public Stream GetJson(Core.Model.mdlParam json)
-        {
-            String nanda = "nanda";
+
+
+        String wawan = "wawan";
+        String nanda = "nanda";
             if (nanda == "")
             { nanda = ""; }
             else
